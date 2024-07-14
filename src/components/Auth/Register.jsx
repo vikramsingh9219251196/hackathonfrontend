@@ -89,9 +89,9 @@ const Register = () => {
             toast.success(data.message, toastOptions);
             setTimeout(() => {
                 if (role === "rag picker") {
-                    navigate("/"); 
+                    navigate("/login"); 
                 } else if (role === "user") {
-                    navigate("/");
+                    navigate("/login");
                 }
             }, 2000);
         } else {
