@@ -1,0 +1,125 @@
+:root {
+    --accent-color: #3498db;
+    --hover-color: #2980b9;
+    --text-color: #f0e7e7;
+    --transition-speed: 0.3s;
+}
+
+.read-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 100%;
+    margin: 15rem auto 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, var(--accent-color), #8e44ad);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.product-details2 {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.product-details2 h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.product-details2 p{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.description {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.price {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.category, .stock, .location, .contact {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-right:15rem;
+}
+
+.buttons button {
+    padding: 1rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+.buttons button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+.paymentbtn {
+    background-color: #27ae60;
+}
+
+.paymentbtn:hover {
+    background-color: #219a52;
+}
+
+@media (min-width: 768px) {
+    .read-more {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 3rem;
+    }
+
+    .product-image {
+        max-width: 50%;
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .product-details2 {
+        width: 50%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .read-more {
+        max-width: 1200px;
+    }
+}

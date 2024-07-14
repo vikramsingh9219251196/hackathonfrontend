@@ -1,0 +1,132 @@
+.new-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out;
+}
+
+.new-banner:hover img {
+    transform: scale(1);
+}
+
+.new-banner-content {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    width: 600px; 
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.new-banner-content:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.new-banner-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.new-banner-content p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.new-banner-content button {
+    padding: 1rem 2rem;
+    background-color: #ec0d0d;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-banner-content button:hover {
+    background-color: #ff3030;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-banner-content button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+    .new-banner-content {
+        left: 5%;
+        max-width: 500px; 
+    }
+    
+    .new-banner-content h1 {
+        font-size: 3rem;
+    }
+    
+    .new-banner-content p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-banner {
+        height: 400px;
+    }
+    
+    .new-banner-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        max-width: none;
+    }
+    
+    .new-banner-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .new-banner-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-banner {
+        height: 300px;
+    }
+    
+    .new-banner-content h1 {
+        font-size: 2rem;
+    }
+    
+    .new-banner-content p {
+        font-size: 1rem;
+    }
+    
+    .new-banner-content button {
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+    }
+}

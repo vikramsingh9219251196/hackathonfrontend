@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --font-family: "Nunito", sans-serif;
+  --dark-blue: #0a1930;
+  --light-blue: #1f93ff;
+  --color-white: #fff;
+  --color-dark: #333;
+  --color-grey: #eee;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --color-purple: #9d0191;
+  --color-orange: #ff7722;
+  --color-primary: #007bff;
+  --color-success: #28a745;
+  --color-danger: orangered;
+  --gradient-1: linear-gradient(135deg, #6e8efb, #a777e3);
+  --gradient-2: linear-gradient(135deg, #ff6b6b, #feca57);
+  --gradient-3: linear-gradient(135deg, #00b894, #00cec9);
+}
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+html {
+  font-size: 70.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-white);
+  border-radius: 5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  /* background: url("https://img.freepik.com/free-photo/blurred-lights-garland_23-2147785832.jpg?t=st=1720862888~exp=1720866488~hmac=729c0abafef298a5f5be14e8541563c0342c1f06f4eeb18a1d049d9352ce80a6&w=1380");
+  background-size: cover;
+  background-position: center; */
+  /*
+  color: var(--color-white); */
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--color-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+
+
